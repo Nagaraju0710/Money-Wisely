@@ -1,19 +1,82 @@
-{
-  "posts": [
+{"users": [
+  
+  {
+  "id": 1,
+  "name": "DummyUser1",
+  "username": "@DummyUser1",
+  "age": 25,
+  "email":"dummyUser1@gmail.com"
+  ,"password":"user001",
+  "financialinfo":{
+   "budget":[
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id":1,
+      "name":""
+      ,"date":"",
+      "amount":100000,
+       "remark":"",
+       "category":""
     }
-  ],
-  "comments": [
+   ],
+   "transaction":[
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id":1,
+      "name":""
+      ,"date":"",
+      "amount":0
     }
-  ],
-  "profile": {
-    "name": "typicode"
+   ]
+
+   ,
+   "withdraw":[
+    {
+      "id":1,
+      "name":""
+      ,"date":"",
+      "amount":0
+    }
+   ]
+   }
+   },
+   {
+    "id": 2,
+    "name": "DummyUser2",
+    "username": "@DummyUser2",
+    "age": 25,
+    "email":"dummyUser2@gmail.com"
+    ,"password":"user002",
+    "financialinfo":{
+     "budget":[
+      {
+        "id":1,
+        "name":""
+        ,"date":"",
+        "amount":100000,
+         "remark":"",
+         "category":""
+      }
+     ],
+     "transaction":[
+      {
+        "id":1,
+        "name":""
+        ,"date":"",
+        "amount":0
+      }
+     ]
+  
+     ,
+     "withdraw":[
+      {
+        "id":1,
+        "name":""
+        ,"date":"",
+        "amount":0
+      }
+     ]
+    }
+    }
+  
+  
+  ]
   }
-}
