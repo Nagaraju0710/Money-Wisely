@@ -1,7 +1,11 @@
-export const Navbar=()=>{
-    return(
-        <div>
-            <h1>SignPage</h1>
-        </div>
-    )
+import React from 'react'
+
+const SignUpPage = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
+
+export default SignUpPage
