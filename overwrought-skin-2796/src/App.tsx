@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SignUpPage } from './Pages/SignUpPage';
+import { Login } from './Pages/LoginPage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Lets DO Work</h1>
+      {/* <SignUpPage/> */}
+      <Login/>
     </div>
   );
 }
