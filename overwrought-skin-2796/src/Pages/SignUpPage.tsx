@@ -1,13 +1,97 @@
 
-import React from "react"
-import { Link } from "react-router-dom";
+import { useToast } from "@chakra-ui/toast";
+import React, { useEffect, useState } from "react"
+import { Link, useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
+import { UserObject } from "../constrain";
+import { useDispatch, useSelector } from "react-redux";
+import { Dispatch } from "redux";
+import { SignUp, getUsers } from "../Redux/authRedux/action";
 
 
 
 
 
 export const SignUpPage = () => {
+  const toast = useToast();
+  const [user,setUser] = useState<UserObject>({ fullname:"",
+email: "",password: "",budget:[],
+withdraw:[],subscription:[],age:0,
+});
+
+const navigate=useNavigate();
+const dispatch: Dispatch<any> =useDispatch();
+const AllUser =useSelector((store:any)=>store.authReducer.Users)
+
+useEffect(() => {
+
+  dispatch(getUsers())
+  // getUsers(dispatch)
+  
+  },[])
+
+const handleChange =(e:React.ChangeEvent<HTMLInputElement>)=>{
+  const {name,value}=e.target;
+  const newUser = {...user,[name]:value};
+  setUser(newUser);
+    }
+
+    const handleSubmit =()=>{
+      console.log("Submit",user)
+      if(user.email === "" || user.password === "" ){
+        // alert("Please enter valid data");
+        toast({
+          title: 'valid email',
+          description: 'give valid data.',
+          status: 'warning', 
+          duration: 2000,  
+          isClosable: true, 
+        });
+  
+  
+      }else if (Array.isArray(AllUser)) {
+  
+      
+  let userPrasent = AllUser.find((el:UserObject)=>{
+    return el.email==user.email;
+  })
+  console.log(userPrasent,"user")
+  
+       if(!userPrasent){
+        // alert("You already have a account with this email address")
+        toast({
+          title: 'already registered email',
+          description: 'You already have a account with this email address.',
+          status: 'error', 
+          duration: 2000,  
+          isClosable: true, 
+        });
+        setUser({ fullname:"",
+      email: "",password: "",budget:[],
+      withdraw:[],subscription:[],age:0,
+      
+      })
+       }else{
+        dispatch(SignUp(user))
+        // alert("your registration is successful")
+        setUser({ fullname:"",
+      email: "",password: "",budget:[],
+      withdraw:[],subscription:[],age:0,
+      
+      })
+        toast({
+          title: 'Signup Success',
+          description: 'your registration is successful.',
+          status: 'success', 
+          duration: 2000,  
+          isClosable: true, 
+        });
+        navigate("/login");
+       }
+      }
+      
+    }
+
   return (
     <div>
       <div style={{display:"flex",}}>
@@ -19,20 +103,18 @@ export const SignUpPage = () => {
         <div>
           <h2>SIGNUP PAGE</h2>
 
-          <input type="text" name="first name" placeholder='First Name' />
-          <br />
-          <input type="text" name="last name" placeholder='Last Name' />
+          <input type="text" name="fullname" placeholder='Full Name' value={user.fullname} onChange={handleChange}/>
           <br />
 
-          <input type="number" name="age" placeholder='Age' />
+          <input type="number" name="age" placeholder='Age' value={user.age} onChange={handleChange}/>
           <br />
-          <input type="email" name="email" placeholder='Email' />
-          <br />
-
-          <input type="password" name="password" placeholder='Password' />
+          <input type="email" name="email" placeholder='Email' value={user.email} onChange={handleChange}/>
           <br />
 
-          <button type="submit">SignUp</button>
+          <input type="password" name="password" placeholder='Password' value={user.password} onChange={handleChange}/>
+          <br />
+
+          <button type="submit" onClick={handleSubmit}>SignUp</button>
           <br />
           
           <span><p>alreday have an account?   <Link to="/login">Login</Link></p></span>
@@ -98,7 +180,7 @@ text-align: center;
       font-style: italic; /* Placeholder text style */
     }
 input[type="number"]{
-  width: 420px;
+  width: 400px;
 } 
     button[type="submit"] {
       width: 80%;

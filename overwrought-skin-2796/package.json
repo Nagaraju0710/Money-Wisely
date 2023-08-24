@@ -10,6 +10,9 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+
+   
+
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.43",
     "@types/react": "^18.2.21",
@@ -20,13 +23,17 @@
     "json-server": "^0.17.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+
+    "styled-components": "^6.0.7",
+
+
     "react-icons": "^4.10.1",
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
-    "styled-components": "^6.0.7",
+    
     "thunk": "^0.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
