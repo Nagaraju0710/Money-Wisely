@@ -330,7 +330,7 @@ import Navbar from "../Components/Navbar";
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
                 </Text>
-                <Heading size={"md"}>- Mahesh Dalle</Heading>
+                <Heading size={"md"}>- Mahesh Rao</Heading>
               </VStack>
               <VStack className="feedback">
                 <Text>

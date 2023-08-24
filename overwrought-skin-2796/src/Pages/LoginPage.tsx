@@ -23,7 +23,7 @@ export const Login = () => {
                         <button type="submit">Login</button>
                         <br />
 
-                        <span><p>Create an new account?   <Link to="/login">SignUp</Link></p></span>
+                        <span><p>Create an new account?   <Link to="/signup">SignUp</Link></p></span>
                     </div>
                 </Div>
             </div>

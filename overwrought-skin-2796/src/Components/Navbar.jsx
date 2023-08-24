@@ -24,6 +24,7 @@ import logonew from "../images/logonew.png"
   import { HamburgerIcon } from "@chakra-ui/icons";
 //   import { burger } from "../utils/icons";
   import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 //   import { useNavigate } from "react-router-dom";
 //   import DashBoard from "../pages/DashBoard";
   
@@ -117,10 +118,38 @@ import logonew from "../images/logonew.png"
             </Button>
           </HStack>
           } */}
+<HStack paddingLeft={{ base: "10px", md: "10px", lg: "60px" }}>
+<Link to="/login">
+  <Button 
+    variant="outline" 
+    transition="border-radius 0.3s ease-in-out"
+    _hover={{
+      borderRadius: "20px",
+    }}
+  >
+    Log in
+  </Button>
+</Link>
+
+<Link to="/signup">
+  <Button
+    colorScheme="blue"
+    transition="border-radius 0.3s ease-in-out"
+    _hover={{
+      borderRadius: "20px",
+    }}
+    bgColor="blue"
+    color="white"
+  >
+    Sign up
+  </Button>
+</Link>
+</HStack>
         </HStack>
   
         {/* <LoginPage isOpen={loginDisclosure.isOpen} onClose={loginDisclosure.onClose} /> */}
         {/* <SignupPage isOpen={signupDisclosure.isOpen} onClose={signupDisclosure.onClose} /> */}
+        
       </Box>
     );
   };
