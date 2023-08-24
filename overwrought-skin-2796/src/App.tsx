@@ -6,6 +6,7 @@ import { SignUpPage } from './Pages/SignUpPage';
 import { Login } from './Pages/LoginPage';
 
 import HomePage from './Pages/Homepage';
+import AllRoutes from './Pages/AllRoutes';
 
 
 function App() {
@@ -14,9 +15,9 @@ function App() {
 
       {/* <SignUpPage/> */}
       {/* <Login/> */}
-
+<AllRoutes/>
       
-      <HomePage/>
+      {/*<HomePage/>*/}
 
     </div>
   );

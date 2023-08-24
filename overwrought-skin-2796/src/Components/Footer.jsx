@@ -51,6 +51,7 @@ import {
             <Heading as={"h3"} size={"md"}>
               Install App
             </Heading>
+            
             <Image
               _hover={{cursor:"pointer"}}
               src={
@@ -59,6 +60,7 @@ import {
               width={"200px"}
               objectFit={"cover"}
             />
+            
   
             <Image
               _hover={{cursor:"pointer"}}
