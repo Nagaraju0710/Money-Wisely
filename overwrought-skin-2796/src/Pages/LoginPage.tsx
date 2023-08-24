@@ -33,6 +33,7 @@ export const Login = () => {
   const handleSubmit = () => {
     // console.log("credential",credentials)
 
+
     if (credentials.email === "admin123@gmail.com" || credentials.password === "admin123") {
       dispatch({ type: ADMIN_SUCCESS })
       navigate("/a/dashboard");
@@ -105,6 +106,10 @@ export const Login = () => {
       <div style={{ display: "flex", }} >
         <div style={{ marginTop: "100px", width: "1000px" }}>
           <img src="https://media.tenor.com/p0G_bmA2vSYAAAAC/login.gif" alt="" />
+
+         
+            </div>
+
         </div>
         <Div>
 
@@ -124,7 +129,7 @@ export const Login = () => {
           </div>
         </Div>
       </div>
-    </div>
+   
   )
 }
 

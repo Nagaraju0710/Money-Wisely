@@ -6,7 +6,11 @@ import { SignUpPage } from './Pages/SignUpPage';
 import { Login } from './Pages/LoginPage';
 
 import HomePage from './Pages/Homepage';
+
 import { AdminDashboard } from './Pages/AdminDashboard';
+
+import AllRoutes from './Pages/AllRoutes';
+
 
 
 function App() {
@@ -15,10 +19,14 @@ function App() {
  
       {/* <SignUpPage/> */}
       {/* <Login/> */}
-
+<AllRoutes/>
       
-      <HomePage/>
+
+   
       {/* <AdminDashboard/> */}
+
+      {/*<HomePage/>*/}
+
 
     </div>
   );
