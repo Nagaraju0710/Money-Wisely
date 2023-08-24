@@ -1,3 +1,4 @@
+
 import React from "react"
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
@@ -38,9 +39,12 @@ export const SignUpPage = () => {
         </div>
       </Div>
       </div>
-    </div>
-  )
+      </div>
+)
 }
+
+
+
 
 
 const Div = styled.div`
