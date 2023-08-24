@@ -1,19 +1,64 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id":1,
+      "first name":"Lonka",
+      "last name":"Nagaraju",
+      "age":22,
+      "email":"nagaraju@gmail.com",
+      "password":"Lonka123",
+      "budget":[],
+      "transaction":[],
+      "withdraw":[],
+      "subscription":[]
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id":2,
+      "first name":"Verma",
+      "last name":"Nikhil",
+      "age":24,
+      "email":"Nikhilverma@gmail.com",
+      "password":"Nikhil123",
+      "budget":[],
+      "transaction":[],
+      "withdraw":[],
+      "subscription":[]
+    },
+    {
+      "id":3,
+      "first name":"Jayaraj",
+      "last name":"Nithin",
+      "age":24,
+      "email":"Nithin@gmail.com",
+      "password":"Nithin123",
+      "budget":[],
+      "transaction":[],
+      "withdraw":[],
+      "subscription":[]
+    },
+    {
+      "id":4,
+      "first name":"Guptha",
+      "last name":"Ranjeeth",
+      "age":24,
+      "email":"Ranjeeth@gmail.com",
+      "password":"Ranjeeth123",
+      "budget":[],
+      "transaction":[],
+      "withdraw":[],
+      "subscription":[]
+    },
+    {
+      "id":4,
+      "first name":"Gore",
+      "last name":"Siddhesh",
+      "age":24,
+      "email":"Siddhesh@gmail.com",
+      "password":"Siddhesh123",
+      "budget":[],
+      "transaction":[],
+      "withdraw":[],
+      "subscription":[]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
