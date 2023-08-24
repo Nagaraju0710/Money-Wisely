@@ -1,3 +1,3 @@
-export const reducer=()=>{
+export const budgetReducer=()=>{
     
 }

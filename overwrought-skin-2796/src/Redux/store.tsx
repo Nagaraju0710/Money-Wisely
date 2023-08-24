@@ -1,12 +1,17 @@
-// // import { applyMiddleware, combineReducers, legacy_createStore } from "redux"
-// import {reducer as authReducer} from "./authRedux/reducer"
-// import {reducer as budgetReducer} from "./BudgetRedux/reducer"
-// // import thunk from "redux-thunk"
+import { applyMiddleware, combineReducers, legacy_createStore } from "redux"
+import { authReducer} from "./authRedux/reducer"
+import {budgetReducer} from "./BudgetRedux/reducer"
+import { subscriptionReducer } from "./subscriptionRedux/reducer";
+// import {transactionReducer} from "./trasactionRedux/reducer";
+import {withdrawReducer} from "./withdrawRedux/reducer"
+import thunk from "redux-thunk"
 
-// const rootReducer = combineReducers({
-//     authReducer,
-//     budgetReducer
-// })
+const rootReducer = combineReducers({
+    // budgetReducer,
+    authReducer,
+    // subscriptionReducer,
+    
+    // withdrawReducer
+})
 
-// export const store = legacy_createStore(rootReducer, applyMiddleware(thunk))
-export {}
+export const store = legacy_createStore(rootReducer, applyMiddleware(thunk))
