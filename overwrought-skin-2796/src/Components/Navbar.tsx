@@ -144,6 +144,23 @@ import { Link } from "react-router-dom";
     Sign up
   </Button>
 </Link>
+
+{/* ------Ranjeet*Gupta------- */}
+<Link to="/dashboard">
+  <Button
+    colorScheme="white"
+    transition="border-radius 0.3s ease-in-out"
+    _hover={{
+      borderRadius: "20px",
+    }}
+    bgColor="blue"
+    color="red"
+  >
+    Dashboard
+  </Button>
+</Link>
+{/* ------Ranjeet*Gupta------- */}
+
 </HStack>
         </HStack>
   
