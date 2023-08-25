@@ -7,7 +7,7 @@ import { Login } from './Pages/LoginPage';
 
 import HomePage from './Pages/Homepage';
 
-import { AdminDashboard } from './Pages/AdminDashboard';
+import { AdminDashboard } from './Admin/AdminDashboard';
 
 import AllRoutes from './Pages/AllRoutes';
 

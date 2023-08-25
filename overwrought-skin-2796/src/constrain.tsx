@@ -36,6 +36,7 @@ export type UserObject = {
 
 export interface UserObjectNew {
     fullname: string;
+    age:number;
     email: string;
     password: string;
     id?: number;
