@@ -78,7 +78,7 @@ export const Login = () => {
           });
 
           if (location.state == null) {
-            navigate("/")
+            navigate("/dashboard")
           } else {
             navigate(location.state, { replace: true });
           }
@@ -106,11 +106,8 @@ export const Login = () => {
       <div style={{ display: "flex", }} >
         <div style={{ marginTop: "100px", width: "1000px" }}>
           <img src="https://media.tenor.com/p0G_bmA2vSYAAAAC/login.gif" alt="" />
-
-         
-            </div>
-
         </div>
+
         <Div>
 
           <div>
@@ -128,8 +125,10 @@ export const Login = () => {
             <span><p>Create an new account?   <Link to="/signup">SignUp</Link></p></span>
           </div>
         </Div>
+
       </div>
-   
+    </div>
+
   )
 }
 
