@@ -13,36 +13,23 @@ import {
   } from "@chakra-ui/react";
   
   
-  import { ArrowForwardIcon } from "@chakra-ui/icons";
-  import animeGif1 from "../images/animeGif1.gif";
-  import animeGif2 from "../images/animeGif2.gif";
-  import animeGif3 from "../images/animeGif3.gif";
-  import G1JO from "../images/G1JO.gif"
-  import android from "../images/android.gif"
-  import wallet from "../images/wallet.gif"
-  import group from "../images/group.gif"
-  import finance from "../images/finance.gif"
-
+import { ArrowForwardIcon } from "@chakra-ui/icons";
   
-  //AOS Styling
-  import AOS from "aos";
-  import "aos/dist/aos.css";
-//   import SignupPage from "./SignupPage";
-  import axios from "axios";
+import android from "../images/android.gif"
+import wallet from "../images/wallet.gif"
+import group from "../images/group.gif"
+import finance from "../images/finance.gif"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import axios from "axios";
 import SignUpPage from "./SignUpPage";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
-//   import { useSelector } from "react-redux";
-//   import { useNavigate } from "react-router-dom";
+
   AOS.init();
   
   const HomePage = () => {
-    // const { isOpen, onOpen, onClose } = useDisclosure();
-    // const navigate= useNavigate();
-  
-    //Redux Store
-    // const isAuth = useSelector((store)=> store.authReducer.isAuth)
-  
+    
     return (
       
       <Box bg={"#f5f5ed"}>
@@ -91,34 +78,6 @@ import Navbar from "../Components/Navbar";
                 improve their spending habits
               </Text>
               <Stack alignItems={"center"}>
-                {/* {
-                  isAuth ? <Button
-                    variant={"outline"}
-                    colorScheme={"blue"}
-                    padding={"23px"}
-                    transition={"border-radius 0.3s ease-in-out"}
-                    _hover={{
-                      borderRadius: "20px",
-                    }}
-                    rightIcon={<ArrowForwardIcon />}
-                    // onClick={()=> navigate("/dashboard") }
-                  >
-                    Go to Dashboard
-                  </Button> : <Button
-                    variant={"outline"}
-                    colorScheme={"blue"}
-                    padding={"23px"}
-                    transition={"border-radius 0.3s ease-in-out"}
-                    _hover={{
-                      borderRadius: "20px",
-                    }}
-                    rightIcon={<ArrowForwardIcon />}
-                    // onClick={onOpen}
-                  >
-                    Get Started
-                  </Button>
-                } */}
-                
               </Stack>
             </Stack>
             <Flex
@@ -370,8 +329,6 @@ import Navbar from "../Components/Navbar";
             </Grid>
           </div>
         </Container>
-       
-        {/* <SignUpPage isOpen={isOpen} onClose={onClose} /> */}
         <Footer/>
       </Box>
    
