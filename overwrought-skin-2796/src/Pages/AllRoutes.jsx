@@ -18,13 +18,6 @@ const AllRoutes = () => {
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='*' element={<h3>Page Not Found 404</h3>}/>
 
-      {/* -----------Ranjeet*Gupta-------- */}
-      <Route path='/dashboard/profile' element={<Profile />} />
-      <Route path='/dashboard/analysis' element={<Analysis />} />
-      <Route path='/dashboard/income' element={<Income />} />
-      <Route path='/dashboard/expenses' element={<Expenses />} />
-      {/* -----------Ranjeet*Gupta-------- */}
-
     </Routes>
   )
 }
