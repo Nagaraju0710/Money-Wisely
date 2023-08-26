@@ -20,14 +20,14 @@ import logonew from "../images/logonew.png"
 import { useSelector } from "react-redux";
 import { Link, Navigate } from "react-router-dom";
   import { useNavigate } from "react-router-dom";
- 
+ import latestlogofinal from "../images/latestlogofinal.png"
   
   const Navbar = () => {
     
   
     return (
       <Box
-        bg={"#ecbdbd"}
+        bg={"#ffd280"}
         style={{ position: "sticky", top: 0, zIndex: 999 }}
         
       >
@@ -41,10 +41,10 @@ import { Link, Navigate } from "react-router-dom";
             <Image
               boxSize="80px"
               objectFit={"cover"}
-              src={logonew}
+              src={latestlogofinal}
               alt="moneywise"
               cursor={"pointer"}
-              marginLeft={{base:"25px", md:"25px", lg:"0px"}}
+              marginLeft={{base:"25px", md:"25px", lg:"-50px"}}
             />
             <Text
               fontSize={"lg"}
@@ -61,6 +61,7 @@ import { Link, Navigate } from "react-router-dom";
 <Link to="/login">
   <Button 
     variant="outline" 
+    // bgColor="red"
     transition="border-radius 0.3s ease-in-out"
     _hover={{
       borderRadius: "20px",
@@ -77,7 +78,7 @@ import { Link, Navigate } from "react-router-dom";
     _hover={{
       borderRadius: "20px",
     }}
-    bgColor="blue"
+    bgColor="red"
     color="white"
   >
     Sign up
@@ -92,7 +93,7 @@ import { Link, Navigate } from "react-router-dom";
     _hover={{
       borderRadius: "20px",
     }}
-    bgColor="blue"
+    bgColor="black"
     color="red"
   >
     Dashboard
