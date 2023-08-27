@@ -64,7 +64,7 @@ export const Login = () => {
           return el.email === credentials
             .email && el.password === credentials.password
         });
-        console.log(isprasent, "prasent")
+        // console.log(isprasent, "prasent")
         if (isprasent) {
           //   dispatch(Login({...isprasent}))
           dispatch({ type: LOGIN_SUCCESS, payload: { ...isprasent } });

@@ -4,6 +4,7 @@ import { Profile } from './Profile';
 import { Income } from './Income';
 import { Expenses } from './Expenses';
 import { Analysis } from './Analysis';
+import { useSelector } from 'react-redux';
 
 
 const initialState = {
@@ -53,6 +54,7 @@ const reducer = (state, {type, payload}) => {
 
 export const SideBar = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const activeuser = useSelector((store) => store.authReducer.ActiveUser);
 
   return (
     <SIDE>
@@ -61,8 +63,8 @@ export const SideBar = () => {
         <div className='image-container'>
           <img className='image' src='https://cdn-icons-png.flaticon.com/512/488/488938.png?w=740&t=st=1690110831~exp=1690111431~hmac=8170b637d79793cc753a647be4ed469a97f246e10c1cfd81363806365c7f5bb9' alt="" />
           <div className='details'>
-            <h1>Name: Ranjeet Gupta</h1>
-            <p>Email: ranjeetgupta114@gmail.com</p>
+            <h1>{activeuser[0].fullname} </h1>
+            <p>{activeuser[0].email}</p>
           </div>
         </div>
 

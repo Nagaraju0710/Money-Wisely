@@ -28,23 +28,18 @@ import {
 // import { signupData } from "../utils/userData";
 // import { useSelector } from "react-redux";
  import { IoCreateOutline } from "react-icons/io5";
+import { useSelector } from "react-redux";
 
 export const Profile = () => {
-  // const [userInfo, setUserInfo] = useState(signupData);
+
+  const activeUser = useSelector((store) => store.authReducer.ActiveUser);
+
+  
    const [show, setShow] = useState(false);
-  // const [edit, setEdit] = useState(true);
+  
    const handleClick = () => setShow(!show);
 
-  // const userData = useSelector((store) => store.authReducer.User);
 
-  // const handleChange = () => {};
-
-  // const handleEdit = ()=>{
-  //   setEdit(!edit);
-  // }
-
-  // // destructuring userInfo state
-  // const { name, username, email, password , age} = userData;
 
   return (
     <Box
@@ -93,7 +88,7 @@ export const Profile = () => {
           <Input
             type="text"
             name="name"
-            // value={name}
+            value={activeUser[0].fullname}
             placeholder="Name"
             // isDisabled={edit}
             // onChange={handleChange}
@@ -111,7 +106,7 @@ export const Profile = () => {
             type="text"
             placeholder="username e.g. abc47"
             name="username"
-            // value={username}
+            value={activeUser[0].fullname}
             // isDisabled={edit}
             // onChange={handleChange}
           />
@@ -128,7 +123,7 @@ export const Profile = () => {
             type="number"
             placeholder="username e.g. abc47"
             name="username"
-            // value={age}
+            value={activeUser[0].age}
             // isDisabled={edit}
             // onChange={handleChange}
           />
@@ -144,7 +139,7 @@ export const Profile = () => {
           <Input
             type="email"
             name="email"
-            // value={email}
+            value={activeUser[0].email}
             // isDisabled={edit}
             placeholder="Email address"
             // onChange={handleChange}
@@ -165,7 +160,7 @@ export const Profile = () => {
             // onChange={handleChange}
             name="password"
             // isDisabled={edit}
-            // value={password}
+            value={activeUser[0].password}
           />
           <InputRightElement width="4.5rem">
             <Button
