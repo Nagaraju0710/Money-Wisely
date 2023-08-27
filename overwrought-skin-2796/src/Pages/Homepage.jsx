@@ -284,42 +284,42 @@ import Navbar from "../Components/Navbar";
               gap={6}
               className="container-feedback"
             >
-              <VStack className="feedback">
+              <VStack className="feedback" boxShadow='dark-lg'>
                 <Text>
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
                 </Text>
                 <Heading size={"md"}>- Mahesh Rao</Heading>
               </VStack>
-              <VStack className="feedback">
+              <VStack className="feedback" boxShadow='dark-lg'>
                 <Text>
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
                 </Text>
                 <Heading size={"md"}>- Nikhil Verma</Heading>
               </VStack>
-              <VStack className="feedback">
+              <VStack className="feedback" boxShadow='dark-lg'>
                 <Text>
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
                 </Text>
                 <Heading size={"md"}>- Naga Lonka</Heading>
               </VStack>
-              <VStack className="feedback">
+              <VStack className="feedback" boxShadow='dark-lg'>
                 <Text>
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
                 </Text>
                 <Heading size={"md"}>- Siddhesh Gore</Heading>
               </VStack>
-              <VStack className="feedback">
+              <VStack className="feedback" boxShadow='dark-lg'>
                 <Text>
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
                 </Text>
                 <Heading size={"md"}>- Ranjeet Gupta</Heading>
               </VStack>
-              <VStack className="feedback">
+              <VStack className="feedback" boxShadow='dark-lg'>
                 <Text>
                   "MoneyWisely keeps me on track! Alerts & tips make money
                   management a breeze."
@@ -329,7 +329,9 @@ import Navbar from "../Components/Navbar";
             </Grid>
           </div>
         </Container>
-        
+
+        <br />
+
       </Box>
    
     );

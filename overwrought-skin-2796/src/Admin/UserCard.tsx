@@ -20,7 +20,6 @@ interface userObj{
   export default function UserCard({id,fullname,email,password,age}:userObj) {
     return (
       <DIV>
-  
                 <Wrap>
                   <WrapItem>
                     <Avatar src="https://bit.ly/broken-link" name={fullname} />
@@ -33,9 +32,7 @@ interface userObj{
         <p><b>Password :</b>{password}</p>
   
         <Button colorScheme='teal' size='xs' >
-  
   <Link to={`/a/users/details/${id}`}>Details</Link>
-  
         </Button>
       </DIV>
     )
