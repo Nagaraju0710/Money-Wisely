@@ -49,7 +49,36 @@
       "budget": [],
       "withdraw": [],
       "subscription": []
+    },
+    {
+      "fullname": "abc",
+      "email": "naga@gmail.com",
+      "password": "123",
+      "budget": [],
+      "withdraw": [],
+      "subscription": [],
+      "age": "20000",
+      "id": 7
+    },
+    {
+      "fullname": "Lonka",
+      "email": "abc@gmail.com",
+      "password": "1122",
+      "budget": [],
+      "withdraw": [],
+      "subscription": [],
+      "age": 0,
+      "id": 8
+    },
+    {
+      "fullname": "okokk",
+      "email": "dev@gmail.com",
+      "password": "000",
+      "budget": [],
+      "withdraw": [],
+      "subscription": [],
+      "age": "22",
+      "id": 9
     }
-    
   ]
 }

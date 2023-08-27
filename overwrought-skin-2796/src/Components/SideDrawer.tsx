@@ -26,7 +26,7 @@ function SideDrawer() {
           <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
           <DrawerBody style={{display: "flex", flexDirection: "column", gap: "20px"}}>
             <Button>
-              <Link to="/dashboard/profile">Profile</Link>
+              <Link to="/dashboard/profile/:id">Profile</Link>
             </Button>
             <Button>
               <Link to="/dashboard/analysis">Analysis</Link>
