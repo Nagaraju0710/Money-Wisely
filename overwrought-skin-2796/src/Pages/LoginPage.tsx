@@ -60,7 +60,7 @@ export const Login = () => {
     }
     else {
       if (AllUser) {
-        let isprasent = AllUser.find((el: any) => {
+        let isprasent = AllUser.filter((el: any) => {
           return el.email === credentials
             .email && el.password === credentials.password
         });
