@@ -16,20 +16,20 @@ import { Dashboard } from './Dashboard';
 import { SingleUser } from '../Admin/SingleUser';
 
 // import { Dashboard } from './Dasboard';
-import {ContactUs} from "./ContactUs"
+// import {ContactUs} from "./ContactUs"
 // import { Dashboard } from './Dashboard';
-import { Profile } from '../DashBoardComponents/Profile';
-import { Analysis } from '../DashBoardComponents/Analysis';
-import { Income } from '../DashBoardComponents/Income';
-import { Expenses } from '../DashBoardComponents/Expenses';
+// import { Profile } from '../DashBoardComponents/Profile';
+// import { Analysis } from '../DashBoardComponents/Analysis';
+// import { Income } from '../DashBoardComponents/Income';
+// import { Expenses } from '../DashBoardComponents/Expenses';
 
 
 
 
-import { AdminDashboard } from '../Admin/AdminDashboard';
-import PrivateRoutes from '../Components/PrivateRoute';
-import { UserDetails } from '../Admin/UserDetails';
-import { Dashboard } from './Dashboard';
+// import { AdminDashboard } from '../Admin/AdminDashboard';
+// import PrivateRoutes from '../Components/PrivateRoute';
+// import { UserDetails } from '../Admin/UserDetails';
+// import { Dashboard } from './Dashboard';
 
 
 
