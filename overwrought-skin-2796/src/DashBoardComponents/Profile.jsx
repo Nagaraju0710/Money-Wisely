@@ -51,6 +51,7 @@ export const Profile = () => {
       padding={"20px"}
       bg={"white"}
       margin={"10px auto"}
+      marginTop={"50px"}
       width={{base:"100%", md:"90%", lg:"80%"}}
       borderRadius={"20px"}
       bgColor={"#d2cf72"}
