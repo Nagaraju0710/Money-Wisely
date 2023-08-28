@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { SideBar } from '../DashBoardComponents/SideBar';
 import { styled } from 'styled-components';
@@ -12,12 +13,12 @@ export const Dashboard = () => {
 }
 
 const DIV = styled.div`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-`
+`;
 
 
 

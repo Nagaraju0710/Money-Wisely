@@ -10,6 +10,9 @@ import HomePage from './Pages/Homepage';
 import { AdminDashboard } from './Admin/AdminDashboard';
 
 import AllRoutes from './Pages/AllRoutes';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+
 
 
 
@@ -19,7 +22,12 @@ function App() {
  
       {/* <SignUpPage/> */}
       {/* <Login/> */}
-<AllRoutes/>
+
+      <Navbar />
+
+      <AllRoutes/>
+
+      <Footer />
       
 
    

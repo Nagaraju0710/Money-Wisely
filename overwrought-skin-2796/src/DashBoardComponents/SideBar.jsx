@@ -4,6 +4,8 @@ import { Profile } from './Profile';
 import { Income } from './Income';
 import { Expenses } from './Expenses';
 import { Analysis } from './Analysis';
+import { useSelector } from 'react-redux';
+
 
 const initialState = {
   isProfile: true,
@@ -20,6 +22,7 @@ const reducer = (state, {type, payload}) => {
         isIncome: false,
         isExpenses: false,
         isAnalysis: false,
+        
       }
     case "INCOME":
       return {
@@ -27,6 +30,7 @@ const reducer = (state, {type, payload}) => {
         isIncome: true,
         isExpenses: false,
         isAnalysis: false,
+       
       }
     case "EXPENSES":
       return {
@@ -34,6 +38,7 @@ const reducer = (state, {type, payload}) => {
         isIncome: false,
         isExpenses: true,
         isAnalysis: false,
+        
       }
     case "ANALYSIS":
       return {
@@ -49,16 +54,17 @@ const reducer = (state, {type, payload}) => {
 
 export const SideBar = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const activeuser = useSelector((store) => store.authReducer.ActiveUser);
 
   return (
     <SIDE>
       <div className='side-container'>
 
         <div className='image-container'>
-          <img className='image' src='https://placehold.co/400' alt="" />
+          <img className='image' src='https://cdn-icons-png.flaticon.com/512/488/488938.png?w=740&t=st=1690110831~exp=1690111431~hmac=8170b637d79793cc753a647be4ed469a97f246e10c1cfd81363806365c7f5bb9' alt="" />
           <div className='details'>
-            <h1>Name: Ranjeet Gupta</h1>
-            <p>Email: ranjeetgupta114@gmail.com</p>
+            <h1>{activeuser[0].fullname} </h1>
+            <p>{activeuser[0].email}</p>
           </div>
         </div>
 
@@ -86,6 +92,7 @@ export const SideBar = () => {
           onClick={() => dispatch({type:"ANALYSIS"})}
           >Analysis
           </button>
+
         </div>
       </div>
 
@@ -102,21 +109,20 @@ export const SideBar = () => {
 const SIDE = styled.div`
   display: flex;
   justify-content: center;
-  gap: 10px;
-
 
   .side-container {
-    width: 30%;
-    height: 100vh;
+    width: 300px;
+    height: 650px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    background-color: #d2cf72;
+    border-radius: 20px;
    
   }
 
   .image-container {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

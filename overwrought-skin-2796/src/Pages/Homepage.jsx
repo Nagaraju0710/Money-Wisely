@@ -33,7 +33,7 @@ import Navbar from "../Components/Navbar";
     return (
       
       <Box bg={"#f5f5ed"}>
-        <Navbar/>
+        
         <Container maxW={"7xxl"}>
           <Stack
             align={"center"}
@@ -329,8 +329,9 @@ import Navbar from "../Components/Navbar";
             </Grid>
           </div>
         </Container>
+
         <br />
-        <Footer/>
+
       </Box>
    
     );

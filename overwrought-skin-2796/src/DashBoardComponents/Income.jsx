@@ -143,6 +143,7 @@ const DIV = styled.div`
   gap: 10px;
   border-radius: 10px;
   padding-bottom: 20px;
+  margin-top: 50px;
 `;
 const FormStyled = styled.form`
   display: flex;
