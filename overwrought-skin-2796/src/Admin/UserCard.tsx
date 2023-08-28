@@ -27,9 +27,7 @@ interface userObj{
                 </Wrap>
   
         <h5><b>User Name :</b>{fullname}</h5>
-        <p><b>Age :</b>{age}</p>
-        <p><b>Email :</b>{email}</p>
-        <p><b>Password :</b>{password}</p>
+        
   
         <Button colorScheme='teal' size='xs' >
   <Link to={`/a/users/details/${id}`}>Details</Link>

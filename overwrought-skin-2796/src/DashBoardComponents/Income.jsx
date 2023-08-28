@@ -2,81 +2,76 @@ import React, { useState } from "react";
 import styled from "@emotion/styled";
  import DatePicker from "react-datepicker";
  import "react-datepicker/dist/react-datepicker.css";
-import { Button, Heading } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 import { FcPlus } from "react-icons/fc";
-import { useDispatch, useSelector } from "react-redux";
 
+import { postProduct } from "../Redux/BudgetRedux/action";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
+
+const initalState = {
+  title: "",
+  price: "",
+  date: "",
+  remark: "",
+  category: "",
+ 
+};
 export const Income = () => {
-  // const dispatch = useDispatch();
-  // const user = useSelector((store) => store.authReducer.User);
-  // const [inputState, setInputState] = useState({
-  //   title: "",
-  //   amount: "",
-  //   date: "",
-  //   remark: "",
-  //   category: "",
-  // });
 
-  // const handleAddBudget = () => {
-  //   // Create an array of new budget objects
-  //   const newBudgets = [
-  //     {
-  //       title: title,
-  //       amount: amount,
-  //       date: date,
-  //       remark: remark,
-  //       category: category,
-  //     },
-  //   ];
-  //   dispatch(addBudget(newBudgets, user));
-  // };
-  // const { title, amount, date, remark, category } = inputState;
+  const [productData, setproductData] = useState(initalState);
+  const {error,isError}=useSelector((store)=>{
+     return{
+         error:store.incomereducer.errorl
+         ,
+         isError:store.incomereducer.isError,
+     };
+  },shallowEqual);
+ // const error=useSelector(store=>store.productReducer.error)
+ // const isError=useSelector(store=>store.productReducer.isError)
+   const dispatch=useDispatch()
+   
+  const handleChange = (e) => {
+    const {value,name}=e.target;
+    setproductData((prev)=>{
+        return {...prev,[name]: name==="price"?+value:value}
+    })
+  };
 
-  // const handleInput = (name) => (e) => {
-  //   setInputState({
-  //     ...inputState,
-  //     [name]: name === "amount" ? +e.target.value : e.target.value,
-  //   });
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   handleAddBudget();
-  //   setInputState({
-  //     title: "",
-  //     amount: "",
-  //     date: "",
-  //     remark: "",
-  //     category: "",
-  //   });
-  // };
-
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+   
+    dispatch(postProduct(productData))
+    setproductData(initalState)
+  }
   return (
-    <DIV>
+    <DIV iserror={isError.toString()}>
       <Heading as="h3" textAlign="center" mt={2} size="lg" marginTop={"20px"} color={"#E64158"}>
         ADD INCOME
       </Heading>
-
-      <FormStyled >
+      {error&&<h3>{error}</h3>}
+      <FormStyled onSubmit={handleSubmit}>
         <div className="input-control">
           <label>Title:</label>
           <input
             type="text"
-            //value={title}
+            // value={title}
             name="title"
             placeholder="Salary Title"
-            //onChange={handleInput("title")}
+            onChange={handleChange}
+            
           />
         </div>
         <div className="input-control">
           <label>Amount:</label>
           <input
-            //value={amount}
+            // value={amount}
             type="number"
-            name="amount"
             placeholder="Salary Amount"
-            //onChange={handleInput("amount")}
+            value={productData.price}
+            onChange={handleChange}
+            name="price"
           />
+       
         </div>
         <div className="input-control">
           <label>Date:</label>
@@ -84,12 +79,12 @@ export const Income = () => {
             <DatePicker 
               id="date"
               type="date"
+              name= "date"
+              value={productData.date}
               placeholderText="Enter A Date"
-              //select={date}
+              // select={date}
               dateFormat="dd/MM/yyyy"
-              // onChange={(date) => { 
-              //   setInputState({ ...inputState, date: date });
-              //   }}
+              onChange={handleChange}
              />
           </div>
         </div>
@@ -97,10 +92,10 @@ export const Income = () => {
           <label>Category:</label>
           <select
             required
-            //value={category}
+            value={productData.category}
             name="category"
             id="category"
-           // onChange={handleInput("category")}
+           onChange={handleChange}
           >
             <option value="" disabled>
               Select Option
@@ -119,16 +114,16 @@ export const Income = () => {
           <label>Remark:</label>
           <textarea
             name="description"
-            //value={remark}
+            value={productData.remark}
             placeholder="Remark"
             id="description"
             cols="20"
             rows="2"
-            //onChange={handleInput("remark")}
+            onChange={handleChange}
           ></textarea>
         </div>
         <div className="submit-btn">
-          <button className="button">
+          <button className="button" type="submit">
             <div>
               <FcPlus />Add Income
             </div>
