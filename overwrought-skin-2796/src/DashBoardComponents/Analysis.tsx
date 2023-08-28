@@ -41,6 +41,7 @@ export const Analysis = () => {
   return (
     <>
         <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100vh"}}>
+
             <div style={{width: "90%", height: "90%", border: "1px solid gray", background: "white"}}>
             <h1>Analysis</h1>
             <LineChart
@@ -68,7 +69,8 @@ export const Analysis = () => {
       <Line type="monotone" dataKey="Income" stroke="#82ca9d" />
     </LineChart>
 
-            </div>
+
+            
         </div>
     </>
   )

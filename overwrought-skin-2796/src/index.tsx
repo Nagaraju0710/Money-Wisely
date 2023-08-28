@@ -18,16 +18,12 @@ const root = ReactDOM.createRoot(
 root.render(
 
   <Provider store={store}>
-<ChakraProvider>
-<BrowserRouter>
-<App />
-</BrowserRouter>
-</ChakraProvider>
-</Provider>
-  
-  
- 
- 
+    <ChakraProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ChakraProvider>
+  </Provider>
 
 );
 

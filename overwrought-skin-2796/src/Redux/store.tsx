@@ -1,6 +1,6 @@
 import { applyMiddleware, combineReducers, legacy_createStore } from "redux"
 import { authReducer} from "./authRedux/reducer"
-import {budgetReducer} from "./BudgetRedux/reducer"
+import {incomereducer} from "./BudgetRedux/reducer"
 import { subscriptionReducer } from "./subscriptionRedux/reducer";
 // import {transactionReducer} from "./trasactionRedux/reducer";
 import {withdrawReducer} from "./withdrawRedux/reducer"
@@ -12,8 +12,8 @@ const rootReducer = combineReducers({
     authReducer,
     // subscriptionReducer,
     // withdrawReducer
-    dataReducer
-    
+    dataReducer,
+    incomereducer
 })
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk))

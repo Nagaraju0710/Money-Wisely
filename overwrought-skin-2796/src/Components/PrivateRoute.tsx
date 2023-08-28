@@ -10,7 +10,7 @@ const PrivateRoutes = ({children}:any) => {
     return store.authReducer.isAuth;
   })
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   if(AdminAuth){
     return children;
   }

@@ -60,11 +60,11 @@ export const Login = () => {
     }
     else {
       if (AllUser) {
-        let isprasent = AllUser.find((el: any) => {
+        let isprasent = AllUser.filter((el: any) => {
           return el.email === credentials
             .email && el.password === credentials.password
         });
-        console.log(isprasent, "prasent")
+        // console.log(isprasent, "prasent")
         if (isprasent) {
           //   dispatch(Login({...isprasent}))
           dispatch({ type: LOGIN_SUCCESS, payload: { ...isprasent } });

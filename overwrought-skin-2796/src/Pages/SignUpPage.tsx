@@ -52,7 +52,7 @@ const handleChange =(e:React.ChangeEvent<HTMLInputElement>)=>{
       }else if (Array.isArray(AllUser)) {
   
       
-  let userPrasent = AllUser.find((el:UserObject)=>{
+  let userPrasent = AllUser.filter((el:UserObject)=>{
     return el.email==user.email;
   })
   console.log(userPrasent,"user")

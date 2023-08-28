@@ -51,7 +51,8 @@ import {
             <Heading as={"h3"} size={"md"}>
               Install App
             </Heading>
-            
+           
+          <Link href="https://play.google.com/store/games?device=windows&pli=1">
             <Image
               _hover={{cursor:"pointer"}}
               src={
@@ -59,10 +60,11 @@ import {
               }
               width={"200px"}
               objectFit={"cover"}
-            />
+              
+            /></Link>
             
-  
-            <Image
+           <Link href="https://www.apple.com/in/app-store/">
+           <Image
               _hover={{cursor:"pointer"}}
               src={
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRic3NEzq52LhkWEYfxZA6YAPTT3oYQ_6C27Q&usqp=CAU"
@@ -70,6 +72,8 @@ import {
               width={"200px"}
               objectFit={"cover"}
             />
+           </Link>
+           
           </VStack>
         </Stack>
         <Stack
