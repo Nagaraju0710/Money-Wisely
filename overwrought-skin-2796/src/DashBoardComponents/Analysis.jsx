@@ -42,10 +42,10 @@ export const Analysis = () => {
     <>
         <div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "100vh"}}>
 
-            <div style={{width: "90%", height: "90%", border: "1px solid gray", background: "white"}}>
+            <div style={{width: "80%", height: "70%", border: "1px solid gray", background: "#d2cf72", marginBottom: "170px", borderRadius: "20px"}}>
             <h1>Analysis</h1>
             <LineChart
-      width={600}
+      width={900}
       height={500}
       data={data}
       margin={{
@@ -66,12 +66,10 @@ export const Analysis = () => {
         stroke="#b1100b"
         activeDot={{ r: 8 }}
       />
-      <Line type="monotone" dataKey="Income" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="Income" stroke="black" />
     </LineChart>
-
-
-            
-        </div>
+    </div>
+    </div>
     </>
   )
 }
