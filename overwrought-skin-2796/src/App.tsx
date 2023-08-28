@@ -23,11 +23,11 @@ function App() {
       {/* <SignUpPage/> */}
       {/* <Login/> */}
 
-      <Navbar />
+     
 
       <AllRoutes/>
 
-      <Footer />
+      
       
 
    

@@ -2,12 +2,16 @@
 import React from 'react';
 import { SideBar } from '../DashBoardComponents/SideBar';
 import { styled } from 'styled-components';
+import Footer from '../Components/Footer';
+import Navbar from '../Components/Navbar';
 
 
 export const Dashboard = () => {
   return (
     <DIV>
+      <Navbar />
         <SideBar />
+      <Footer />
     </DIV>
   )
 }

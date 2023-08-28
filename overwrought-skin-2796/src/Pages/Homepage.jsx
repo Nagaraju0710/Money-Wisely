@@ -31,6 +31,10 @@ import Navbar from "../Components/Navbar";
   const HomePage = () => {
     
     return (
+
+      <>
+        <Navbar />
+      
       
       <Box bg={"#f5f5ed"}>
         
@@ -333,6 +337,9 @@ import Navbar from "../Components/Navbar";
         <br />
 
       </Box>
+
+      <Footer />
+      </>
    
     );
   };

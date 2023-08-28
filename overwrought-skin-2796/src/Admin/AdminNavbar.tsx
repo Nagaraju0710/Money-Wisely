@@ -11,6 +11,7 @@ import { Box } from '@chakra-ui/layout';
 import { useDispatch } from 'react-redux';
 // import logo from "../home-image/logo-white.png"
 import { LOGOUT } from '../Redux/authRedux/actionType';
+import latestlogofinal from "../images/latestlogofinal.png";
 
 interface CustomNavLinkProps {
   to: string;
@@ -48,10 +49,10 @@ const handleClick = () => {
   return (
     <DIV>
     <nav className="navbar">
-      {/* <div className="navbar__logo">
-            <img src={logo} alt="" width="200px" />
+      <div className="navbar__logo">
+            <img src={latestlogofinal} alt="" width="200px" />
 
-      </div> */}
+      </div>
 
       <div
         className={`navbar__mobile-toggle ${isMobileMenuOpen ? 'active' : ''}`}
