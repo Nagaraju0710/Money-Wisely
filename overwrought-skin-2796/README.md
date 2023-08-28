@@ -1,46 +1,103 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OVERWROUGHT-SKIN
 
-## Available Scripts
 
-In the project directory, you can run:
+[![logo.jpg](https://i.postimg.cc/J0bdxH4V/Black-and-Grey-Clean-Modern-Minimalist-Creative-Technology-Logo-1.png)](https://postimg.cc/nsKjyYJL)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Overwrought skin  is an online bankin sector app website specializing in deposite money, withdraw, and subscription. Users can easily browse a wide range of amount . The platform offers a seamless deposite money, allowing users to add amount to their saving account. The website also includes an Admin section, providing administrative privileges such as users data. Built using React, TypeScript, and Chakra UI, Overwrought Skin promises a user-friendly interface focusing on functionality.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployed Link
 
-### `npm run build`
+[Netlify Deployed Link:OVERWROUGHT SKIN](https://overwrought-skin-2796.vercel.app)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Link
+[Server Link:  OVERWROUGHT SKIN](http://localhost:8080/users)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
+<div>
+  <img src="https://img.shields.io/badge/React-text?style=for-the-badge&logo=React&color=204456" />
+   <img src="https://img.shields.io/badge/redux-text?style=for-the-badge&logo=redux&color=204456" />
+   <img src="https://img.shields.io/badge/typescript-text?style=for-the-badge&logo=typescript&color=204456" />
+   <img src="https://img.shields.io/badge/chakraui-text?style=for-the-badge&logo=chakraui&color=204456" />
+ <img src="https://img.shields.io/badge/HTML5-text?style=for-the-badge&logo=HTML5&color=2b3b35" />
+  <img src="https://img.shields.io/badge/javascript-text?style=for-the-badge&logo=javascript&color=204456" />
+</div>
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+User Features :
+- User Registration and Login
+- User Profile Page
+- Income Page
+- Expensive Page
+- Analysis Page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Admin Features :
+- Admin  Login and Logout 
+- Admin can view the User details including their cart , order details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Run Locally
 
-## Learn More
+Clone the project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  https://github.com/Nagaraju0710/overwrought-skin-2796
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Go to the project directory
+
+```bash
+  cd overwrought-skin-2796
+```
+
+Install dependencies
+
+```bash
+  npm install 
+
+```
+
+Start the server
+
+```bash
+  npm run server
+```
+
+## Screenshots
+
+## LANDING PAGE
+[![Home.jpg](https://i.postimg.cc/fbN9NJcL/Screenshot-534.png)](https://postimg.cc/XpWKXJsm)
+
+## DASHBOARD PAGE
+[![Products.jpg](https://i.postimg.cc/Qx5PbPnG/Screenshot-536.png)(https://postimg.cc/r0FHWjy0)
+
+## INCOME PAGE
+[![Single-Product.jpg](https://i.postimg.cc/qqrndN0G/Screenshot-538.png)](https://postimg.cc/k6BfCFQW)
+
+## EXPENSIVE PAGE
+[![Cart.jpg](https://i.postimg.cc/C1cYwtp6/Screenshot-540.png)](https://postimg.cc/7bznNLmP)
+
+## ANALYSIS  PAGE
+[![Admin-Product.jpg](https://i.postimg.cc/mD1fGrVh/Screenshot-542.png)](https://postimg.cc/sMHWzFw0)
+
+## ADMIN DASHBOARD PAGE
+[![Admin-Product.jpg](https://i.postimg.cc/FKQDKH97/Screenshot-545.png)](https://postimg.cc/sMHWzFw0)
+
+## USER DETAILS PAGE
+[![User-Details.jpg](https://i.postimg.cc/VsDfBJpP/Screenshot-548.png)](https://postimg.cc/p5B913mC)
+
+
+## 👩‍🚒 OUR TEAM
+
+1. NAGARAJU LONKA
+2. RANJEETH GUPTHA
+3. NITHIN JAYARAJ
+4. NIKIL 
+5. SIDDESH GORE
+
+
